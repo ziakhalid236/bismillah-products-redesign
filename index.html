@@ -7,62 +7,159 @@
   <title>Home | Bismillah Textile</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="assets/favicon.svg">
+  <script>document.documentElement.classList.add("js");addEventListener("load",function(){setTimeout(function(){if(!document.querySelector(".reveal.in"))document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("in")})},1200)})</script>
 </head>
-<body class="demo-home">
-  <div class="topbar"><span>QUALITY TEXTILES FOR EVERYDAY LIVING</span><span>FAISALABAD · PAKISTAN</span><span>CRAFT · QUALITY · PARTNERSHIP</span></div>
+<body>
+  <div class="topbar"><span>Quality textiles for everyday living</span><span>Faisalabad · Pakistan</span><span>Craft · Quality · Partnership</span></div>
   <header class="header">
     <a class="brand" href="index.html"><span class="brandmark">BT</span><span><b>BISMILLAH</b><small>TEXTILE MILLS</small></span></a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-    <nav class="nav"><a class="active" href="index.html">Home</a><a href="products.html">Products</a><a href="manufacturing.html">Our Production</a><a href="manufacturing.html">Facilities</a><a href="partners.html">About Us</a><a href="contact.html">Contact</a><a href="contact.html" class="nav-cta">Get in Touch →</a></nav>
+    <nav class="nav"><a class="active" href="index.html">Home</a><a href="products.html">Products</a><a href="manufacturing.html">Our Production</a><a href="quality.html">Quality</a><a href="partners.html">Partners</a><a href="contact.html" class="nav-cta">Get in touch</a></nav>
   </header>
 
   <main>
-    <section class="demo-hero container">
-      <div class="demo-copy">
-        <span class="eyebrow">WELCOME TO BISMILLAH PRODUCTION</span>
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Welcome to Bismillah Textile</span>
         <h1>Textiles for<br><em>everyday living.</em></h1>
-        <p>We are committed to quality, innovation and responsible practices that help us deliver textiles that bring comfort, style and value to everyday life.</p>
-        <a class="button" href="products.html">Explore Our Products →</a>
+        <p>We are committed to quality, innovation and responsible practices that help us deliver textiles bringing comfort, style and value to everyday life.</p>
+        <div class="button-row">
+          <a class="button" href="products.html">Explore our products</a>
+          <a class="underlink" href="manufacturing.html">Our production</a>
+        </div>
+        <p class="hero-note"><span class="dot"></span>Manufacturing in Faisalabad since 1989</p>
       </div>
-      <div class="demo-image demo-image-hero"><img src="assets/factory-team.jpg" alt="Bismillah textile production team in a factory"></div>
+      <figure class="hero-visual reveal">
+        <img src="assets/factory-team.jpg" alt="Bismillah textile production team in a factory">
+        <figcaption class="hero-badge"><b>2,500+</b><span>People behind every textile</span></figcaption>
+      </figure>
     </section>
 
-    <section class="demo-section container demo-products">
-      <div class="demo-heading"><div><span class="eyebrow">OUR PRODUCTS</span><h2>Made for the<br><em>spaces we live in.</em></h2></div><div><img class="demo-side-image" src="assets/folded-fabrics.jpg" alt="Finished folded textiles"><p>From home textiles to apparel fabrics, our products are designed to bring comfort, quality and style to every aspect of life.</p></div></div>
-      <div class="demo-card-grid four">
-        <a class="demo-card" href="products.html#home"><span class="demo-card-icon">01</span><h3>Home Textiles</h3><p>Comforter sets, bed linen, towels and essentials for better living.</p><span class="card-link">View Products →</span></a>
-        <a class="demo-card" href="products.html#fabric"><span class="demo-card-icon">02</span><h3>Fabric</h3><p>High-quality fabrics for multiple applications and industries.</p><span class="card-link">View Products →</span></a>
-        <a class="demo-card" href="products.html#hospitality"><span class="demo-card-icon">03</span><h3>Hospitality</h3><p>Premium textiles for guest comfort and hospitality programmes.</p><span class="card-link">View Products →</span></a>
-        <a class="demo-card" href="products.html#apparel"><span class="demo-card-icon">04</span><h3>Garments & Apparel Fabrics</h3><p>Reliable fabric options for modern apparel projects.</p><span class="card-link">View Products →</span></a>
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Weaving</span><span>Processing</span><span>Embroidery</span><span>Quilting</span><span>Cutting &amp; stitching</span><span>Yarn dyeing</span>
+        <span>Weaving</span><span>Processing</span><span>Embroidery</span><span>Quilting</span><span>Cutting &amp; stitching</span><span>Yarn dyeing</span>
+      </div>
+    </div>
+
+    <section class="section container">
+      <div class="section-heading reveal">
+        <div>
+          <span class="eyebrow">Our products</span>
+          <h2>Made for the<br><em>spaces we live in.</em></h2>
+        </div>
+        <p>From home textiles to apparel fabrics, our products are designed to bring comfort, quality and style to every aspect of life.</p>
+      </div>
+      <div class="cards four">
+        <a class="product-card reveal" href="products.html#home"><img src="assets/bedding.jpg" alt="Home textiles bedding"><div><span class="card-kicker">01 — Home</span><h3>Home Textiles</h3><p>Comforter sets, bed linen, towels and essentials for better living.</p><span class="card-link">View products</span></div></a>
+        <a class="product-card reveal" href="products.html#fabric"><img src="assets/folded-fabrics.jpg" alt="Folded fabrics"><div><span class="card-kicker">02 — Fabric</span><h3>Fabric</h3><p>High-quality fabrics for multiple applications and industries.</p><span class="card-link">View products</span></div></a>
+        <a class="product-card reveal" href="products.html#hospitality"><img src="assets/towels.jpg" alt="Hospitality linen"><div><span class="card-kicker">03 — Hospitality</span><h3>Hospitality</h3><p>Premium textiles for guest comfort and hospitality programmes.</p><span class="card-link">View products</span></div></a>
+        <a class="product-card reveal" href="products.html#apparel"><img src="assets/sewing.jpg" alt="Apparel fabrics"><div><span class="card-kicker">04 — Apparel</span><h3>Garments &amp; Apparel Fabrics</h3><p>Reliable fabric options for modern apparel projects.</p><span class="card-link">View products</span></div></a>
       </div>
     </section>
 
-    <section class="demo-section container demo-production">
-      <div class="demo-heading"><div><span class="eyebrow">OUR PRODUCTION</span><h2>Built from<br><em>the yarn.</em></h2><p>Weaving, processing and stitching work together through our Faisalabad operations, giving every range a clear connection from first thread to finished textile.</p><a class="button" href="manufacturing.html">Explore Our Facilities →</a></div><div class="demo-image demo-image-production"><img src="assets/textile-machinery.jpg" alt="Textile machinery and fabric rolls"></div></div>
-      <div class="process-grid"><div class="process-card"><span class="process-icon">01</span><b>Yarn to Fabric</b><small>Seamless flow</small></div><div class="process-card"><span class="process-icon">02</span><b>Weaving</b><small>Precision & quality</small></div><div class="process-card"><span class="process-icon">03</span><b>Processing</b><small>Advanced technology</small></div><div class="process-card"><span class="process-icon">04</span><b>Stitching</b><small>Crafted for perfection</small></div></div>
+    <section class="section container" style="padding-top:0">
+      <div class="feature-band reveal">
+        <div class="feature-art"><img src="assets/textile-machinery.jpg" alt="Textile machinery and fabric rolls"></div>
+        <div class="feature-copy">
+          <span class="eyebrow light">Our production</span>
+          <h2>Built from<br><em>the yarn.</em></h2>
+          <p>Weaving, processing and stitching work together through our Faisalabad operations, giving every range a clear connection from first thread to finished textile.</p>
+          <a class="button button-light" href="manufacturing.html">Explore our facilities</a>
+        </div>
+      </div>
+      <div class="process-grid">
+        <div class="process-card"><span class="process-icon">01</span><b>Yarn to Fabric</b><small>Seamless flow</small></div>
+        <div class="process-card"><span class="process-icon">02</span><b>Weaving</b><small>Precision &amp; quality</small></div>
+        <div class="process-card"><span class="process-icon">03</span><b>Processing</b><small>Advanced technology</small></div>
+        <div class="process-card"><span class="process-icon">04</span><b>Stitching</b><small>Crafted for perfection</small></div>
+      </div>
     </section>
 
-    <section class="capability-band container"><div><span class="capability-arrow">→</span><h2>In-house capability</h2><p>From yarn to finished textile</p></div><img src="assets/yarn-texture.jpg" alt="Yarn and textile production detail"></section>
-
-    <section class="demo-section container demo-range">
-      <div class="demo-range-heading"><div><span class="eyebrow">EXPLORE THE RANGE</span><h2>Made for the<br><em>way people live.</em></h2></div><p>From vibrant home textiles to refined hospitality linen, our collections are designed to bring comfort, elegance and quality to everyday life.</p></div>
-      <div class="range-tabs"><a class="active" href="products.html">All</a><a href="products.html#home">Home Textiles</a><a href="products.html#fabric">Fabric</a><a href="products.html#hospitality">Hospitality</a><a href="products.html#apparel">Garments & Apparel Fabrics</a><a class="range-all" href="products.html">View All Products →</a></div>
-      <div class="range-grid"><a class="range-card" href="products.html#home"><img src="assets/bedding.jpg" alt="Comforter sets"><small>HOME TEXTILES</small><h3>Comforter Sets</h3><p>Comfortable bedding for a cosy and stylish home.</p><span class="card-link">View Details →</span></a><a class="range-card" href="products.html#hospitality"><img src="assets/towels.jpg" alt="Hospitality bed linen"><small>HOSPITALITY</small><h3>Hospitality Bed Linen</h3><p>Premium bed linen created for exceptional guest experiences.</p><span class="card-link">View Details →</span></a><a class="range-card" href="products.html#fabric"><img src="assets/curtains.jpg" alt="Decorative textile fabric"><small>FABRIC</small><h3>Jacquard Fabric</h3><p>Elegant and durable jacquard fabrics for versatile use.</p><span class="card-link">View Details →</span></a></div>
+    <section class="section container" style="padding-top:0">
+      <div class="stats reveal">
+        <div><b>1989</b><span>Founded</span></div>
+        <div><b>136</b><span>Air-jet looms</span></div>
+        <div><b>18</b><span>Stitching units</span></div>
+        <div><b>4m+</b><span>Metres per month</span></div>
+      </div>
     </section>
 
-    <section class="about-facilities">
-      <div class="about-panel"><div><span class="eyebrow light">ABOUT US</span><h2>A trusted name<br>in textile manufacturing.</h2><p>We are a leading textile manufacturer from Faisalabad, committed to delivering high-quality fabrics and finished textiles for homes, hospitality and apparel.</p><a class="button button-light" href="partners.html">Learn More About Us →</a></div><img src="assets/factory-team.jpg" alt="Bismillah textile manufacturing team"></div>
-      <div class="facility-panel"><span class="eyebrow">OUR FACILITIES</span><h2>Modern facilities.<br><em>Greater possibilities.</em></h2><p>Our production route combines weaving, processing, quilting, embroidery, cutting and stitching to support consistent quality and flexible textile programmes.</p><a class="outline-button" href="manufacturing.html">Explore Our Facilities →</a><img src="assets/textile-machinery.jpg" alt="Modern textile production facility"></div>
+    <section class="section container" style="padding-top:0">
+      <div class="range-heading reveal">
+        <div>
+          <span class="eyebrow">Explore the range</span>
+          <h2>Made for the<br><em>way people live.</em></h2>
+        </div>
+        <p>From vibrant home textiles to refined hospitality linen, our collections bring comfort, elegance and quality to everyday life.</p>
+      </div>
+      <div class="range-tabs">
+        <a class="active" href="products.html">All</a>
+        <a href="products.html#home">Home Textiles</a>
+        <a href="products.html#fabric">Fabric</a>
+        <a href="products.html#hospitality">Hospitality</a>
+        <a href="products.html#apparel">Apparel Fabrics</a>
+        <a class="range-all" href="products.html">View all products</a>
+      </div>
+      <div class="range-grid">
+        <a class="range-card reveal" href="products.html#home"><img src="assets/bedding.jpg" alt="Comforter sets"><small>Home textiles</small><h3>Comforter Sets</h3><p>Comfortable bedding for a cosy and stylish home.</p><span class="card-link">View details</span></a>
+        <a class="range-card reveal" href="products.html#hospitality"><img src="assets/towels.jpg" alt="Hospitality bed linen"><small>Hospitality</small><h3>Hospitality Bed Linen</h3><p>Premium bed linen created for exceptional guest experiences.</p><span class="card-link">View details</span></a>
+        <a class="range-card reveal" href="products.html#fabric"><img src="assets/curtains.jpg" alt="Decorative textile fabric"><small>Fabric</small><h3>Jacquard Fabric</h3><p>Elegant and durable jacquard fabrics for versatile use.</p><span class="card-link">View details</span></a>
+      </div>
     </section>
 
-    <section class="trust-strip demo-trust"><div><b>01</b><span>Quality<br><small>Consistent Quality</small></span></div><div><b>02</b><span>Sustainable<br><small>Responsible Practices</small></span></div><div><b>03</b><span>Advanced<br><small>Technology</small></span></div><div><b>04</b><span>Customer<br><small>Satisfaction</small></span></div></section>
+    <section class="section container" style="padding-top:0">
+      <div class="split reveal">
+        <div class="split-panel">
+          <div>
+            <span class="eyebrow light">About us</span>
+            <h2>A trusted name in <em>textile manufacturing.</em></h2>
+            <p>We are a leading textile manufacturer from Faisalabad, committed to delivering high-quality fabrics and finished textiles for homes, hospitality and apparel.</p>
+            <a class="button button-light" href="partners.html" style="margin-top:26px">Learn more about us</a>
+          </div>
+          <img src="assets/factory-team.jpg" alt="Bismillah textile manufacturing team">
+        </div>
+        <div class="facility-panel">
+          <span class="eyebrow">Our facilities</span>
+          <h2>Modern facilities.<br><em>Greater possibilities.</em></h2>
+          <p>Our production route combines weaving, processing, quilting, embroidery, cutting and stitching to support consistent quality and flexible textile programmes.</p>
+          <a class="outline-button" href="manufacturing.html">Explore our facilities</a>
+          <img src="assets/textile-machinery.jpg" alt="Modern textile production facility">
+        </div>
+      </div>
+    </section>
 
-    <section class="demo-section container partners-section"><div class="demo-range-heading"><div><span class="eyebrow">OUR PARTNERS</span><h2>Trusted by<br><em>global brands.</em></h2></div><p>We work with leading brands and retailers around the world, building long-term relationships through trust, quality and shared values.</p></div><a class="button" href="partners.html">Our Partners →</a><div class="partner-names"><span>Walmart</span><span>IKEA</span><span>H&amp;M</span><span>ZARA</span><span>C&amp;A</span><span>Target</span></div></section>
+    <section class="section container" style="padding-top:0">
+      <div class="section-heading reveal">
+        <div>
+          <span class="eyebrow">Our partners</span>
+          <h2>Trusted by<br><em>global brands.</em></h2>
+        </div>
+        <p>We work with leading brands and retailers around the world, building long-term relationships through trust, quality and shared values.</p>
+      </div>
+      <div class="partner-names reveal">
+        <span>Walmart</span><span>IKEA</span><span>H&amp;M</span><span>ZARA</span><span>C&amp;A</span><span>Target</span>
+      </div>
+      <a class="button" href="partners.html" style="margin-top:34px">Our partners</a>
+    </section>
 
-    <section class="work-together container"><div><h2>Let's work together.</h2><p>For inquiries, partnerships or bulk orders, our team is here to help.</p><a class="button button-light" href="contact.html">Contact Us →</a></div><img src="assets/folded-fabrics.jpg" alt="Textile fabrics ready for partnership projects"><a class="work-link" href="contact.html">Partner with us<br><small>for a brighter future. →</small></a></section>
+    <section class="work-together container reveal">
+      <div>
+        <h2>Let's work together.</h2>
+        <p>For inquiries, partnerships or bulk orders, our team is here to help.</p>
+        <a class="button button-light" href="contact.html">Contact us</a>
+      </div>
+      <img src="assets/folded-fabrics.jpg" alt="Textile fabrics ready for partnership projects">
+    </section>
   </main>
 
-  <footer class="footer"><div class="footer-main"><a class="brand" href="index.html"><span class="brandmark">BT</span><span><b>BISMILLAH TEXTILE</b><small>FAISALABAD · PAKISTAN</small></span></a><nav class="footer-links"><a href="index.html">Home</a><a href="products.html">Products</a><a href="manufacturing.html">Our Production</a><a href="manufacturing.html">Facilities</a><a href="partners.html">About Us</a><a href="contact.html">Contact</a></nav></div><div class="footer-bottom"><span>© 2026 Bismillah Textile. All rights reserved.</span><span>Privacy · Terms</span></div></footer>
+  <footer class="footer">
+    <div class="footer-main">
+      <a class="brand" href="index.html"><span class="brandmark">BT</span><span><b>BISMILLAH TEXTILE</b><small>FAISALABAD · PAKISTAN</small></span></a>
+      <nav class="footer-links"><a href="index.html">Home</a><a href="products.html">Products</a><a href="manufacturing.html">Our Production</a><a href="quality.html">Quality</a><a href="partners.html">Partners</a><a href="contact.html">Contact</a></nav>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Bismillah Textile. All rights reserved.</span><span>Privacy · Terms</span></div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
