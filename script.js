@@ -32,17 +32,28 @@ if ('IntersectionObserver' in window && revealTargets.length) {
 }
 
 // Product category filter
-document.querySelectorAll('.filter-row button').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter-row button').forEach((b) => b.classList.remove('active'));
-    btn.classList.add('active');
-    const filter = btn.dataset.filter;
-    document.querySelectorAll('.product-grid .product-card').forEach((card) => {
-      const show = filter === 'all' || card.dataset.category === filter;
-      card.style.display = show ? '' : 'none';
-    });
+const filterButtons = document.querySelectorAll('.filter-row button');
+const productCards = document.querySelectorAll('.product-grid .product-card');
+
+function applyFilter(filter) {
+  filterButtons.forEach((b) => b.classList.toggle('active', b.dataset.filter === filter));
+  productCards.forEach((card) => {
+    const show = filter === 'all' || card.dataset.category === filter;
+    card.hidden = !show;
   });
+}
+
+filterButtons.forEach((btn) => {
+  btn.addEventListener('click', () => applyFilter(btn.dataset.filter));
 });
+
+// Deep links from the homepage, e.g. products.html#fabric
+if (productCards.length) {
+  const hash = location.hash.slice(1);
+  if (hash && [...filterButtons].some((b) => b.dataset.filter === hash)) {
+    applyFilter(hash);
+  }
+}
 
 // Contact form -> draft email
 document.querySelector('#contact-form')?.addEventListener('submit', (e) => {
